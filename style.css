@@ -1,0 +1,593 @@
+html {
+    scroll-behavior: smooth;
+}
+.navbar-nav .nav-link:hover {
+    color: blue !important;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+.welcome {
+    height: 450px;
+    background-image: url("./images/bah-pic.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 20px;
+}
+.welcome::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, rgba(0, 45, 90, 0.95), transparent);
+}
+.welcome-text {
+    position: relative;
+    padding: 130px 0 0 55px;
+    color: white;
+    margin-left: 20px;
+}
+.welcome-text h1 {
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.welcome-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.learn {
+    background-color: navy;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.learn:hover {
+    background-color: lightblue;
+}
+.card {
+    width: 23rem;
+    height: 430px;
+    border: none;
+    text-align: center;
+    border-radius: 12px;
+}
+.card:nth-child(1) {
+    background-color: #eef7ff;
+}
+.card:nth-child(2) {
+    background-color: #f5f0ff;
+}
+.card:nth-child(3) {
+    background-color: #eefaf7;
+}
+.card:nth-child(4) {
+    background-color: #fff5ed;
+}
+.card-body {
+    padding: 30px 25px;
+}
+.icon {
+    width: 105px;
+    height: 105px;
+    margin: 45px auto 20px;
+    font-size: 52px;
+    border-radius: 50%;
+}
+.card:nth-child(1) .icon {
+    background-color: #0875e1;
+}
+
+.card:nth-child(2) .icon {
+    background-color: #7455c7;
+}
+
+.card:nth-child(3) .icon {
+    background-color: #35a78c;
+}
+
+.card:nth-child(4) .icon {
+    background-color: #e58b45;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.card-text {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.card .btn {
+    padding: 10px 38px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+.card:nth-child(1) .btn {
+    border-color:rgb(35, 147, 185);
+    color: rgb(10, 184, 247);
+}
+.card:nth-child(2) .btn {
+    border-color: #b9a5e8;
+    color: #8b70cc;
+}
+
+.card:nth-child(3) .btn {
+    border-color: #83d1c1;
+    color: #42a890;
+}
+
+.card:nth-child(4) .btn {
+    border-color: #e5b184;
+    color: #d57a2f;
+}
+
+.card .btn:hover {
+    background-color: navy;
+    color: white;
+}
+.faculty-title {
+    text-align: center;
+    color: navy;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.faculty-cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    background-color: #f3f8fc;
+    padding: 25px 20px;
+}
+
+.faculty-card {
+    width: 23rem;
+    height: 430px;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 25px;
+}
+
+.faculty-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.faculty-card h5 {
+    color: #173b70;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.faculty-role {
+    color: #5d6d80;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.faculty-text {
+    color: #4d5d70;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    color: #173b70;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    size: 100px;
+}
+
+.social-icons span {
+    cursor: pointer;
+}
+.contact-section {
+    background-color: white;
+    padding: 50px 0;
+}
+.contact-title {
+    text-align: center;
+    color: #123d68;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+.contact-info {
+    padding: 15px 30px;
+}
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.info-icon {
+    color: #1677ed;
+    font-size: 32px;
+    width: 55px;
+    min-width: 55px;
+    margin-right: 12px;
+}
+.info-item h6 {
+    color: #263b52;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 7px;
+}
+.info-item p {
+    color: #526579;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+.social-section {
+    border-top: 1px solid #dfe5eb;
+    padding-top: 18px;
+    margin-top: 10px;
+}
+.social-section h6 {
+    color: #263b52;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.social-icons a {
+    color: #243f5c;
+    font-size: 24px;
+    margin-right: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: #1677ed;
+}
+.contact-form {
+    background-color: #f3f8fe;
+    border-radius: 8px;
+    padding: 30px;
+}
+.contact-form label {
+    display: block;
+    color: #263b52;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.contact-form .form-control {
+    height: 48px;
+    border: 1px solid #d9e1ea;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px 13px;
+    margin-bottom: 18px;
+}
+.contact-form .form-control:focus {
+    border-color: #1677ed;
+    box-shadow: 0 0 0 2px rgba(22, 119, 237, 0.1);
+}
+.contact-form textarea.form-control {
+    height: 110px;
+    resize: none;
+    font-size: 14px;
+}
+.send-btn {
+    background-color: #2478ed;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    height: 48px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.send-btn:hover {
+    background-color: #1265d5;
+}
+.footer {
+    background-color: #123761;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.footer p {
+    font-size: 12px;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+
+.navbar .container-fluid {
+    padding: 10px 20px;
+}
+
+.navbar img {
+    width: 80px;
+    height: 80px;
+    margin-left: 0 !important;
+}
+
+.navbar-brand {
+    font-size: 20px !important;
+}
+
+.navbar-nav {
+    margin-right: 0 !important;
+    font-size: 17px !important;
+}
+
+.welcome {
+    height: 400px;
+    background-size: cover;
+}
+
+.welcome-text {
+    padding: 110px 0 0 35px;
+    margin-left: 10px;
+}
+
+.welcome-text h1 {
+    font-size: 36px;
+}
+
+.welcome-text p {
+    font-size: 18px;
+}
+
+.card {
+    width: 20rem;
+    height: 400px;
+}
+
+.card-body {
+    padding: 25px 20px;
+}
+
+.icon {
+    width: 90px;
+    height: 90px;
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.card-title {
+    font-size: 21px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.faculty-card {
+    width: 20rem;
+    height: 400px;
+    padding: 25px 20px;
+}
+.faculty-pic {
+    width: 105px;
+    height: 105px;
+}
+.faculty-card h5 {
+    font-size: 21px;
+}
+.faculty-role,
+.faculty-text {
+    font-size: 16px;
+}
+}
+@media (max-width: 768px) {
+.navbar .container-fluid {
+    padding: 10px 15px;
+}
+.navbar img {
+    width: 65px;
+    height: 65px;
+    margin-left: 0 !important;
+}
+.navbar-brand {
+    font-size: 17px !important;
+    margin-left: 5px !important;
+}
+.navbar-nav {
+    margin: 10px 0 0 0 !important;
+    font-size: 16px !important;
+    text-align: center;
+}
+.nav-link {
+    padding: 6px !important;
+}
+.welcome {
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.welcome::before {
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 45, 90, 0.9),
+        rgba(0, 45, 90, 0.35)
+    );
+}
+.welcome-text {
+    padding: 100px 25px 0;
+    margin-left: 0;
+}
+.welcome-text h1 {
+    font-size: 32px;
+}
+.welcome-text p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+.learn {
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.programs-title {
+    font-size: 28px;
+    margin-top: 20px;
+}
+.d-flex {
+    gap: 20px !important;
+    padding: 0 15px;
+}
+.card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 390px;
+}
+.card-body {
+    padding: 25px 20px;
+}
+.icon {
+    width: 90px;
+    height: 90px;
+    font-size: 45px;
+    margin: 25px auto 20px;
+}
+.card-title {
+    font-size: 21px;
+}
+.card-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.faculty-title {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.faculty-cards {
+    gap: 20px;
+    padding: 20px 15px;
+}
+.faculty-card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 400px;
+    padding: 25px 20px;
+}
+.faculty-pic {
+    width: 110px;
+    height: 110px;
+}
+.faculty-card h5 {
+    font-size: 21px;
+}
+.faculty-role,
+.faculty-text {
+    font-size: 16px;
+}
+.contact-section {
+    padding: 35px 15px;
+}
+.contact-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.contact-info {
+    padding: 10px 5px;
+    margin-bottom: 25px;
+}
+.info-item {
+    margin-bottom: 25px;
+}
+.info-icon {
+    font-size: 27px;
+    width: 45px;
+    min-width: 45px;
+}
+.info-item h6 {
+    font-size: 17px;
+}
+.info-item p {
+    font-size: 14px;
+}
+.contact-form {
+    padding: 20px;
+}
+.footer {
+    margin-top: 15px;
+    padding: 18px 10px;
+}
+.footer p {
+    font-size: 11px;
+}
+}
+@media (max-width: 480px) {
+.navbar img {
+    width: 45px;
+    height: 45px;
+}
+.navbar-brand {
+    font-size: 14px !important;
+}
+.welcome {
+    height: 350px;
+}
+.welcome-text {
+    padding: 85px 20px 0;
+}
+.welcome-text h1 {
+    font-size: 28px;
+}
+.welcome-text p {
+    font-size: 15px;
+}
+.learn {
+    font-size: 14px;
+    padding: 9px 17px;
+}
+.card {
+    max-width: 100%;
+}
+.card-title {
+    font-size: 20px;
+}
+.card-text {
+    font-size: 15px;
+}
+.faculty-card {
+    max-width: 100%;
+}
+.faculty-card h5 {
+    font-size: 20px;
+}
+.faculty-text {
+    font-size: 15px;
+}
+.contact-title {
+    font-size: 27px;
+}
+.contact-form {
+    padding: 18px;
+}
+.send-btn {
+    font-size: 14px;
+}
+}
